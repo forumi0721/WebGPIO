@@ -2,6 +2,8 @@ from lib.setup import rooms, settings
 
 if settings['Make'] == 'OrangePi':
 	import OPi.GPIO as GPIO
+elif settings['Make'] == 'BananaPi':
+	import BPi.GPIO as GPIO
 else:
 	import RPi.GPIO as GPIO
 
